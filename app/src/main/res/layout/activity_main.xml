@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="396dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/judul_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="INPUT AKUN"
+        android:textColor="#2196F3"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <EditText
+        android:id="@+id/nmr_akun"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_number"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Masukkan Nomor Akun"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_txt" />
+
+    <EditText
+        android:id="@+id/nama_akun"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_text"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Masukkan Nama Akun"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nmr_akun" />
+
+    <EditText
+        android:id="@+id/laporan_akun"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/ic_report"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Masukkan laporan Akun"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nama_akun" />
+
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="119dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="30dp"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/viewakun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/laporan_akun" />
+
+    <Button
+        android:id="@+id/viewakun"
+        android:layout_width="134dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="65dp"
+        android:text="VIEW AKUN"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/simpan"
+        app:layout_constraintTop_toBottomOf="@+id/laporan_akun" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
